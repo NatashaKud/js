@@ -1,0 +1,63 @@
+body {
+  background-color: beige;
+}
+
+.container {
+  max-width: 1180px;
+  padding: 0 20px;
+  margin: 0 auto;
+}
+
+.content {
+  display: grid;
+  grid-template-columns: 1fr 1fr 1fr 1fr;
+  grid-gap: 20px;
+}
+
+.link {
+  height: 100px;
+}
+
+.link:hover {
+  background-color: rgb(255, 251, 218);
+}
+
+.link1 {
+  background-color: rgb(200, 250, 200);
+}
+
+.link2 {
+  background-color: rgb(179, 253, 179);
+}
+
+.link3 {
+  background-color: rgb(248, 202, 202);
+}
+
+.link4 {
+  background-color: rgb(248, 195, 195);
+}
+
+.link5 {
+  background-color: rgb(248, 198, 198);
+}
+
+.link6 {
+  background-color: rgb(250, 176, 176);
+}
+
+.link7 {
+  background-color: rgb(252, 173, 173);
+}
+
+.link8 {
+  background-color: rgb(252, 122, 122);
+}
+
+a {
+  color: black;
+  text-decoration: none;
+  display: flex; 
+  justify-content: center;
+  align-items: center;
+}

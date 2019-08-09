@@ -39,7 +39,6 @@ while (a < Number(volume)) {
   }
   if (isNaN(product.price)) { 
     alert("Вы ввели не число!");
-    break; 
   }
   console.log(product);
   a++;

@@ -39,7 +39,7 @@ body {
 }
 
 .link5 {
-  background-color: rgb(248, 198, 198);
+  background-color: rgb(132, 218, 132);
 }
 
 .link6 {
@@ -60,4 +60,26 @@ a {
   display: flex; 
   justify-content: center;
   align-items: center;
+}
+
+/* стили для пятого задания*/
+.block {
+  width: 150px;
+  height: 150px;
+  margin-bottom: 10px;
+  border: 1px solid black;
+}
+
+.block-js {
+  width: 200px;
+  height: 200px;
+  border: 2px solid black
+}
+
+.border {
+  border: 2px solid blue;
+}
+
+.bgcolor {
+  background-color: rgb(255, 179, 208);
 }

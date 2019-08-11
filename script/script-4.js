@@ -20,7 +20,22 @@ arr.reverse();
 console.log(arr);
 
 //1.4
-
+function store() {
+  var volume = prompt("Введите количество товара");
+  var a = 0;
+  while (a < Number(volume)) {
+    var product = {
+      name: prompt("Введите название товара"),
+      price: prompt("Введите цену товара"),
+    }
+    if (isNaN(product.price)) { 
+      alert("Вы ввели не число!");
+    }
+    console.log(product);
+    a++;
+  }
+}
+store()
 
 
 //2
@@ -28,7 +43,8 @@ var text = prompt("Введите текст");
 function capitalLetter(up) {
   return up.toUpperCase();
 }
-var newText = text.replace(/\.\s\S/g, capitalLetter);
+//с помощью регулярных выражений - заменить все "точка-пробел-любой непробельный символ" на функцию, которая возвращает парметр в верхнем регистре
+var newText = text.replace(/\.\s\S/g, capitalLetter); 
 console.log(newText);
 
 //3

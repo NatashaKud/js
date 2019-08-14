@@ -43,7 +43,7 @@ body {
 }
 
 .link6 {
-  background-color: rgb(250, 176, 176);
+  background-color: rgb(171, 238, 171);
 }
 
 .link7 {
@@ -62,7 +62,7 @@ a {
   align-items: center;
 }
 
-/* стили для пятого задания*/
+/* стили для пятого задания */
 .block {
   width: 150px;
   height: 150px;
@@ -82,4 +82,27 @@ a {
 
 .bgcolor {
   background-color: rgb(255, 179, 208);
+}
+
+/* стили для шестого задания */
+.box {
+  width: 150px;
+  height: 150px;
+  margin: 10px;
+}
+
+.yellow {
+  background-color: yellow;
+  border: 2px solid black;
+  box-sizing: border-box;
+}
+
+.blue {
+  background-color: blue;
+  border: 5px dotted black;
+  box-sizing: border-box;
+}
+
+.plus-block {
+  border: 1px solid black;
 }

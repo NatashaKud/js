@@ -25,5 +25,3 @@ function showBlock() {
   block3.after(hiddenBlock); //ставлю новый блок после третьего
 }
 block3.addEventListener("click", showBlock, {once: true}); //добавление блока при клике единожды
-
-//3

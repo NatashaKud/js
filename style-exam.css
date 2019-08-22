@@ -1,0 +1,252 @@
+@import './fonts/bebasneue.css';
+
+body {
+  font-size: 24px;
+  line-height: 28px;
+}
+
+.container {
+  max-width: 1220px;
+  padding: 0 20px;
+  margin: 0 auto;
+}
+
+/* стили заголовков */
+h1 {
+  font-size: 36px;
+  line-height: 36px;
+  text-transform: uppercase;
+  font-family: 'Bebas Neue', arial;
+}
+
+.time__title, .lamp__title {
+  margin-bottom: 33px;
+}
+
+.parallax__title {
+  margin-bottom: 75px;
+  width: 439px;
+}
+
+.slider__title {
+  margin-bottom: 60px;
+}
+
+/* блок меню */
+.header__content {
+  padding: 16px 0 17px 0;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+
+.header__logo {
+  background: url('./img/logo-dl.png') no-repeat center / contain;
+  width: 212px;
+  height: 68px;
+}
+
+.header__links {
+  text-align: right;
+}
+
+.header__links_link {
+  font-family: 'Open Sans Condensed', sans-serif;
+  font-size: 16px;
+  line-height: 22px;
+  color: black;
+  margin-left: 9px;
+}
+
+.header__links_link:hover {
+  text-decoration: none;
+  color: #3590CC;
+}
+
+/* блок времени */
+.time {
+  background: #F1F1F1;
+}
+
+.time__content {
+  padding: 51px 0 59px 0;
+}
+
+#input {
+  margin-bottom: 33px;
+}
+
+.time__result {
+font-family: 'Roboto', sans-serif;
+font-size: 24px;
+line-height: 28px;
+}
+
+/* блок с лампочками */
+.lamp__content {
+  padding: 66px 0 67px 0;
+}
+
+.lamp__black {
+  background: url('./img/lamp-black-off.png') no-repeat center / cover;
+  width: 75px;
+  height: 80px;
+  display: inline-block;
+  margin-right: 25px;
+}
+
+.lamp__black-on {
+  background: url('./img/lamp-black-on.png') no-repeat center / cover;
+  width: 75px;
+  height: 80px;
+  display: inline-block;
+  margin-right: 25px;
+  filter: drop-shadow(0 0 3px #000);
+}
+
+.lamp__yellow {
+  background: url('./img/lamp-yellow-off.png') no-repeat center / cover;
+  width: 81px;
+  height: 80px;
+  display: inline-block;
+  margin-right: 22px;
+}
+
+.lamp__yellow-on {
+  background: url('./img/lamp-yellow-on.png') no-repeat center / cover;
+  width: 81px;
+  height: 80px;
+  display: inline-block;
+  margin-right: 22px;
+  filter: drop-shadow(0 0 3px #000);
+}
+
+.lamp__blue {
+  background: url('./img/lamp-blue-off.png') no-repeat center / cover;
+  width: 80px;
+  height: 86px;
+  display: inline-block;
+}
+
+.lamp__blue-on {
+  background: url('./img/lamp-blue-on.png') no-repeat center / cover;
+  width: 80px;
+  height: 86px;
+  display: inline-block;
+  filter: drop-shadow(0 0 3px #000);
+}
+
+/* блок с параллаксом */
+.parallax {
+  background: #F1F1F1;
+}
+
+.parallax__content {
+  padding: 63px 0 74px 0;
+}
+
+.parallax__efect {
+  margin: 0 auto;
+  width: 780px;
+  height: 393px;
+  overflow: hidden;
+  position: relative;
+}
+
+.parallax__page {
+  background: url('./img/windows-l.png') no-repeat center / cover;
+  width: 987px;
+  height: 555px;
+  position: absolute;
+  top: -100px;
+}
+
+
+.parallax__shadow {
+  background: linear-gradient(to left,rgba(196, 196, 196, 0.7),rgba(196, 196, 196, 0.7));
+  width: 987px;
+  height: 555px;
+}
+
+.parallax__text {
+  font-size: 64px;
+  line-height: 64px;
+  text-transform: uppercase;
+  font-family: 'Bebas Neue', arial;
+  color: #FFFFFF;
+  position: absolute;
+  top: 167px;
+  left: 191px;
+}
+
+/* блок со слайдерами */
+.slider__content {
+  padding: 60px 0 45px 0;
+}
+
+.slider__flex {
+  display: flex;
+  align-items: center;
+  margin: 0 auto;
+  width: 982px;
+  margin-bottom: 25px;
+}
+
+.slider__pointer-left {
+  background: url('./img/pointer-left.png') no-repeat center / contain;
+  width: 34px;
+  height: 58px;
+}
+
+.slider__pointer-right {
+  background: url('./img/pointer-right.png') no-repeat center / contain;
+  width: 34px;
+  height: 58px;
+}
+
+.slider__page {
+  width: 780px;
+  height: 437px;
+  overflow: hidden;
+  margin: 0 67px;
+}
+
+.slider__page-wrap {
+  display: flex;
+}
+
+.slider__page-vel {
+  background: url('./img/velosiped.png') no-repeat center / contain;
+  width: 780px;
+  height: 437px;
+}
+
+.slider__page-les {
+  background: url('./img/les.png') no-repeat center / contain;
+  width: 780px;
+  height: 437px;
+}
+
+.slider__page-bas {
+  background: url('./img/bassejn.png') no-repeat center / contain;
+  width: 780px;
+  height: 437px;
+}
+
+.slider__circle {
+  display: flex;
+  justify-content: center;
+}
+
+.circle  {
+  width: 6px;
+  height: 6px;
+  background: #9C9C9C;
+  border-radius: 50%;
+  display: inline-block;
+}
+
+.slider__circle1 {
+  background: #3590CC;
+}
+

@@ -9,13 +9,20 @@
   <div class="todolist">
     <div class="todo">
       <h1>Список дел</h1>
-      <div class="block-do"><input type="text" placeholder="Введите новое дело..." size="50px"  id="do"><button type="button" id="button-do">Добавить</button></div>  
+      <div class="block-do"><input type="text" placeholder="Введите новое дело..." size="50px" value="" id="do"><button type="button" id="button-do">Добавить</button></div>  
 
-      <div class="block-delete"><input type="text" placeholder="Введите выполненное дело, чтобы удалить..." size="50px" id="delete"><button type="button" id="button-delete">Удалить</button></div> 
+      <div class="block-delete"><input type="text" placeholder="Введите номер дела, которое надо удалить..." size="50px" id="delete"><button type="button" id="button-delete">Удалить</button></div> 
 
-      <div class="block-edit"><input type="text" placeholder="Введите дело, которое надо отредактировать..." size="50px" id="edit"><button type="button" id="button-edit">Изменить</button></div> 
+      <div class="block-number">
+        <input type="text" placeholder="Введите номер дела, которое надо отредактировать..." size="50px" id="edit-number">
+      </div>
+      
+      <div class="block-edit">
+        <input type="text" placeholder="Введите дело, на которое меняем..." size="50px" id="edit">
+        <button type="button" id="button-edit">Изменить</button>
+      </div>
     </div>
-    <div id="list"></div>
+    <ol id="list"></ol>
   </div>
   <hr>
   <span>Bведите температуру в градусах Цельсия:</span> <input type="text" id="input">

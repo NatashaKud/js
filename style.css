@@ -154,11 +154,11 @@ a {
 /* стили для седьмого дз */
 .todolist {
   margin: 0 auto 20px auto;
-  width: 500px;
+  width: 600px;
 }
 
 .todo {
-  padding: 20px 0;
+  padding: 20px;
   background-color: rgb(248, 188, 188);
 }
 
@@ -168,16 +168,18 @@ h1 {
 }
 
 .block-do, .block-delete, .block-edit {
-  display: flex; 
-  justify-content: center;
-  align-items: center;
-}
-
-.block-do, .block-delete {
-  margin-bottom: 10px;
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  grid-column-gap: 10px;
 }
 
 #list {
   background-color: rgb(250, 227, 231);
+  margin: 0;
+  padding: 20px 40px;
+}
+
+.todo > div {
+  margin-bottom: 10px;
 }
 

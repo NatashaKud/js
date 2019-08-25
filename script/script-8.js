@@ -3,16 +3,14 @@ var input = document.getElementById("input");
 function enterDate(event) {                            
   if (event.keyCode === 13) {
     function result() {
-      var c = new Date(input.value).getTime();
-      console.log(c);
-      var now = new Date().getTime();
-      console.log(now);
-      var b = new Date(c - now); 
-      var d = b.getDate();
-      var h = b.getHours();
-      var m = b.getMinutes();
-      var sec = b.getSeconds();
-      document.getElementById("result").innerHTML = d + " дн., " + h + " ч., " + m + " мин., " + sec + " сек.";
+      var enteredDate = new Date(input.value).getTime();
+      var nowDate = new Date().getTime();
+      var calcDate = new Date(enteredDate - nowDate); 
+      var days = Math.floor(calcDate/1000/60/60/24);
+      var hours = Math.floor((calcDate/1000/60/60)%24);
+      var minutes = Math.floor((calcDate/1000/60)%60);
+      var second = Math.floor((calcDate/1000)%60);
+      document.getElementById("result").innerHTML = days + " дн., " + hours + " ч., " + minutes + " мин., " + second + " сек.";
     }
     setInterval(result, 1000);
   }
@@ -108,10 +106,11 @@ var circleOne = document.getElementsByClassName("slider__circle1")[0];
 var circleTwo = document.getElementsByClassName("slider__circle2")[0];
 var circleThree = document.getElementsByClassName("slider__circle3")[0];
 
+clickRight.addEventListener("click", right);
 function right() {
   slide.style.transform = "translateX(-780px)";       // движение слайда
   slide.style.transition = "0.5s";
-  circleTwo.style.background = "#3590CC";             // мзменение круглых переключателей
+  circleTwo.style.background = "#3590CC";             // изменение круглых переключателей
   circleOne.style.background = "#9C9C9C";
   circleThree.style.background = "#9C9C9C";
   this.removeEventListener("click", right);
@@ -124,9 +123,8 @@ function right() {
     circleOne.style.background = "#9C9C9C";
   }
 }
-clickRight.addEventListener("click", right);
 
-clickLeft.removeEventListener("click", left);
+clickLeft.addEventListener("click", left);
 function left() {
   slide.style.transform = "translateX(-780px)";
   slide.style.transition = "0.5s";
@@ -143,7 +141,6 @@ function left() {
     circleThree.style.background = "#9C9C9C";
   }
 }
-clickLeft.addEventListener("click", left);
 
 // круглые переключатели у слайда
 function sliderCircleOne() {
@@ -172,6 +169,3 @@ function sliderCircleThree() {
   slide.style.transition = "0.5s";
 }
 circleThree.addEventListener("click", sliderCircleThree);
-
-
-

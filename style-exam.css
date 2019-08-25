@@ -101,7 +101,7 @@ line-height: 28px;
   height: 80px;
   display: inline-block;
   margin-right: 25px;
-  filter: drop-shadow(0 0 3px #000);
+  filter: drop-shadow(4px 4px 1px #000);
 }
 
 .lamp__yellow {
@@ -118,7 +118,7 @@ line-height: 28px;
   height: 80px;
   display: inline-block;
   margin-right: 22px;
-  filter: drop-shadow(0 0 3px #000);
+  filter: drop-shadow(4px 4px 1px #ebc21e);
 }
 
 .lamp__blue {
@@ -133,7 +133,7 @@ line-height: 28px;
   width: 80px;
   height: 86px;
   display: inline-block;
-  filter: drop-shadow(0 0 3px #000);
+  filter: drop-shadow(4px 4px 1px #0f6fff);
 }
 
 /* блок с параллаксом */
@@ -216,19 +216,19 @@ line-height: 28px;
 }
 
 .slider__page-vel {
-  background: url('./img/velosiped.png') no-repeat center / contain;
+  background: url('./img/velosiped.png') no-repeat center / cover;
   width: 780px;
   height: 437px;
 }
 
 .slider__page-les {
-  background: url('./img/les.png') no-repeat center / contain;
+  background: url('./img/les.png') no-repeat center / cover;
   width: 780px;
   height: 437px;
 }
 
 .slider__page-bas {
-  background: url('./img/bassejn.png') no-repeat center / contain;
+  background: url('./img/bassejn.png') no-repeat center / cover;
   width: 780px;
   height: 437px;
 }
@@ -249,4 +249,3 @@ line-height: 28px;
 .slider__circle1 {
   background: #3590CC;
 }
-
